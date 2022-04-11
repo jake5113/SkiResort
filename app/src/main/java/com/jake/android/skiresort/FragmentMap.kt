@@ -18,10 +18,17 @@ class FragmentMap : Fragment() {
 
     private val callback = OnMapReadyCallback { googleMap ->
 
-        val sydney = LatLng(-34.0, 151.0)
-        googleMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
+        val seoul = LatLng(37.0, 126.0)
+        googleMap.addMarker(MarkerOptions().position(seoul).title("Marker in Seoul"))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(seoul))
+
+        val ski1 = LatLng(37.2924, 128.1454)
+        googleMap.addMarker(MarkerOptions().position(ski1).title("Marker in Ski1"))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(ski1))
+
     }
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
