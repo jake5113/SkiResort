@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
 import com.jake.android.skiresort.databinding.FragmentListBinding
 
 class FragmentList : Fragment() {
@@ -21,12 +20,23 @@ class FragmentList : Fragment() {
 //        val item = arrayOf("1", "2", "3")
 //        binding.skiList.adapter = activity?.let { ArrayAdapter<String>(it,
 //            android.R.layout.simple_list_item_1, item) }
+
         var UserList = arrayListOf<User>(
-            User(R.drawable.ski, "베어스타운","경기","2022-2023"),
-            User(R.drawable.ski, "알펜시아리조트","강원","2022-2023"),
-            User(R.drawable.ski, "하이원리조트","강원","2022-2023"),
-            User(R.drawable.ski, "용평 리조트","경기","2022-2023"),
-            User(R.drawable.ski, "엘리시안 강촌","경기","2022-2023")
+            User(R.drawable.ski10, "곤지암리조트","경기","2022-2023"),
+            User(R.drawable.ski1, "베어스타운 리조트","경기","2022-2023"),
+            User(R.drawable.ski4, "양지 파인 스키밸리","경기","2022-2023"),
+            User(R.drawable.ski3, "지산 포레스트 리조트","경기","2022-2023"),
+            User(R.drawable.ski2, "엘리시안 강촌","강원","2022-2023"),
+            User(R.drawable.ski5, "비발디파크","강원","2022-2023"),
+            User(R.drawable.ski6, "알펜시아 리조트","강원","2022-2023"),
+            User(R.drawable.ski7, "오크밸리 리조트","강원","2022-2023"),
+            User(R.drawable.ski8, "오투 리조트","강원","2022-2023"),
+            User(R.drawable.ski14, "용평 리조트","강원","2022-2023"),
+            User(R.drawable.ski10, "웰리힐리 파크","강원","2022-2023"),
+            User(R.drawable.ski11, "하이원 리조트","강원","2022-2023"),
+            User(R.drawable.ski12, "휘닉스 평창 스노우파크","강원","2022-2023"),
+            User(R.drawable.ski13, "무주 덕유산 리조트","충청/전라","2022-2023"),
+            User(R.drawable.ski1, "에덴밸리리조트","경상","2022-2023")
         )
 
         val Adapter = UserAdapter(this, UserList)
