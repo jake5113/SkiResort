@@ -13,15 +13,11 @@ class FragmentList : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
         binding = FragmentListBinding.inflate(inflater, container, false)
 
-//        val item = arrayOf("1", "2", "3")
-//        binding.skiList.adapter = activity?.let { ArrayAdapter<String>(it,
-//            android.R.layout.simple_list_item_1, item) }
-
-        var UserList = arrayListOf<User>(
+        val list = arrayListOf<User>(
             User(R.drawable.ski10, "곤지암리조트","경기","2022-2023"),
             User(R.drawable.ski1, "베어스타운 리조트","경기","2022-2023"),
             User(R.drawable.ski4, "양지 파인 스키밸리","경기","2022-2023"),
@@ -39,13 +35,13 @@ class FragmentList : Fragment() {
             User(R.drawable.ski1, "에덴밸리리조트","경상","2022-2023")
         )
 
-        val Adapter = UserAdapter(this, UserList)
-        with(binding) {
-            skiList.adapter = Adapter
+
+        val adapter = UserAdapter(this, list)
+        with (binding) {
+            skiList.adapter = adapter
 
             //skiList.onItemClickListener = AdapterView.OnItemClickListener {view,}
         }
-
 
         return binding.root
     }

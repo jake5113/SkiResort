@@ -17,14 +17,21 @@ import com.google.android.gms.maps.model.MarkerOptions
 class FragmentMap : Fragment() {
 
     private val callback = OnMapReadyCallback { googleMap ->
+        val konjiam = LatLng(37.336944, 127.293611)
+        googleMap.addMarker(MarkerOptions().position(konjiam).title("곤지암리조트"))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(konjiam))
 
-        val seoul = LatLng(37.0, 126.0)
-        googleMap.addMarker(MarkerOptions().position(seoul).title("Marker in Seoul"))
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(seoul))
+        val bears = LatLng(37.798056, 127.247222)
+        googleMap.addMarker(MarkerOptions().position(bears).title("베어스타운 리조트"))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(bears))
 
-        val ski1 = LatLng(37.2924, 128.1454)
-        googleMap.addMarker(MarkerOptions().position(ski1).title("Marker in Ski1"))
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(ski1))
+        val yangji = LatLng(37.211944, 127.295)
+        googleMap.addMarker(MarkerOptions().position(yangji).title("양지 파인 스키밸리"))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(yangji))
+
+        val jisan = LatLng(37.216667, 127.345278)
+        googleMap.addMarker(MarkerOptions().position(jisan).title("지산 포레스트 리조트"))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(jisan))
 
     }
 
