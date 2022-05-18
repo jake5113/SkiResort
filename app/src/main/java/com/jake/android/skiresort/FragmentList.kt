@@ -32,7 +32,7 @@ class FragmentList : Fragment() {
             User(R.drawable.ski11, "하이원 리조트","강원","2022-2023"),
             User(R.drawable.ski12, "휘닉스 평창 스노우파크","강원","2022-2023"),
             User(R.drawable.ski13, "무주 덕유산 리조트","충청/전라","2022-2023"),
-            User(R.drawable.ski1, "에덴밸리리조트","경상","2022-2023")
+            User(R.drawable.ski1, "에덴밸리 리조트","경상","2022-2023")
         )
 
 
