@@ -29,18 +29,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:icon="?android:attr/actionModeFindDrawable"
-            android:text="List" />
+            android:text="@string/menu1" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:icon="@android:drawable/ic_dialog_map"
-            android:text="Map" />
+            android:text="@string/menu2" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:icon="@drawable/shop"
-            android:text="Shop" />
+            android:text="@string/menu3" />
     </com.google.android.material.tabs.TabLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
